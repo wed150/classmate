@@ -1,0 +1,39 @@
+.FadeOutFrame {
+ width: 320px;
+ height: 180px;
+ background-color: #abffe8;
+ border: 1px solid #0067aa;
+ opacity: 1;
+}
+.FadeOutFrame.fadeout{
+ -webkit-transition: all 1.5s;
+ -moz-transition: all 1.5s;
+ -ms-transition: all 1.5s;
+ -o-transition: all 1.5s;
+ transition: all 1.5s;
+ opacity: 0;
+}
+.FadeInFrame {
+opacity: 0;
+            content: '';
+			display: block;
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-image: url("images/bg.jpg");
+			background-position: center;
+			background-size: cover;
+			background-repeat: no-repeat;
+            filter: blur(2px);
+ opacity: 0;
+}
+.FadeInFrame.fadein{
+ -webkit-transition: all 1.5s;
+ -moz-transition: all 1.5s;
+ -ms-transition: all 1.5s;
+ -o-transition: all 1.5s;
+ transition: all 1.5s;
+ opacity: 1;
+}
