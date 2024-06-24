@@ -45,7 +45,7 @@
     left: 0;
     width: 100%;
     margin-top:0px;
-    
+
     height: 100%;
     background-image: url("images/bg.jpg");
     background-position: center;
@@ -125,12 +125,13 @@ body{
 
 }
     .line{
-        margin-top:0px;
+
     position: absolute;
-    top: 240px;
+    top: -50px;
+
     left: 50%;
     background: rgba(0, 0, 0, 0.3);
-    float: left;
+
 
     height: 20px;
     z-index: 4;
@@ -242,7 +243,7 @@ body{
     position: absolute;
     top: 30%;
     left: 50%;
-    margin-left: -325px;
+    margin-left: -320px;
     margin-top:0px;
     
   }
@@ -267,9 +268,9 @@ body{
     z-index: 3;
   }
   
-  .s:nth-child(1) {
-    width: 20px;
-    height: 20px;
+  .s:nth-child(2) {
+    width: 30px;
+    height: 30px;
 
     -webkit-animation: bs linear 2s 0.5s infinite;
     -moz-animation: bs linear 2s 0.5s infinite;
@@ -277,7 +278,7 @@ body{
     z-index: 3;
   }
   
-  .s:nth-child(2) {
+  .s:nth-child(3) {
     width: 30px;
     height: 30px;
 
@@ -287,7 +288,7 @@ body{
     z-index: 3;
   }
   
-  .s:nth-child(3) {
+  .s:nth-child(4) {
     width: 40px;
     height: 40px;
 
@@ -298,7 +299,7 @@ body{
     z-index: 3;
   }
   
-  .s:nth-child(4) {
+  .s:nth-child(5) {
     width: 50px;
     height: 50px;
 
@@ -308,7 +309,7 @@ body{
     z-index: 3;
   }
   
-  .s:nth-child(5) {
+  .s:nth-child(6) {
     width: 60px;
     height: 60px;
 
@@ -318,7 +319,7 @@ body{
     z-index: 3;
   }
   
-  .s:nth-child(6) {
+  .s:nth-child(7) {
     width: 70px;
     height: 70px;
 
@@ -328,7 +329,7 @@ body{
     z-index: 3;
   }
   
-  .s:nth-child(7) {
+  .s:nth-child(8) {
     width: 60px;
     height: 60px;
 
@@ -338,7 +339,7 @@ body{
     z-index: 3;
   }
   
-  .s:nth-child(8) {
+  .s:nth-child(9) {
     width: 50px;
     height: 50px;
 
@@ -348,7 +349,7 @@ body{
     z-index: 3;
   }
   
-  .s:nth-child(9) {
+  .s:nth-child(10) {
     width: 40px;
     height: 40px;
 
@@ -358,7 +359,7 @@ body{
     z-index: 3;
   }
   
-  .s:nth-child(10) {
+  .s:nth-child(11) {
     width: 30px;
     height: 30px;
 
@@ -367,6 +368,7 @@ body{
     animation: bs linear 2s 2.3s infinite;
     z-index: 3;
   }
+
   
 
   
