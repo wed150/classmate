@@ -37,7 +37,7 @@
 
 .bg:hover .bgs{
     opacity: 1;
-    transition: opacity 1s 0.2s linear ;
+    transition: opacity 1s 0s linear ;
     content: '';
     display: block;
     position: absolute;
@@ -54,8 +54,8 @@
 }
 
 .font{
-
-
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
 
 
 
@@ -63,14 +63,54 @@
 
     position: absolute;
     font-size: 100px;
-    top: 1%;
+    margin-top:0px;
+    top:10%;
     left:50%;
     font-weight: bold;
     margin-left: -100px;
     color: rgba(255, 255, 255, 0.95);
     z-index: 10;
+    animation: fadein3 2s;
 }
-#button{
+
+#button:hover{
+    -webkit-animation: bs2 linear 1s 1s infinite, bs2-in 1s;
+    -moz-animation: bs2 linear 1s 1s infinite, bs2-in 1s;
+    animation: bs2 linear 1s 1s infinite, bs2-in 1s;
+
+    transition: border-bottom-width 0.2s 0.2s linear,border-bottom-color 0.1s 0.1s linear,background 0.2s 0.2s linear,animation 0.2s 0.2s linear;
+
+    border-bottom-style: solid;
+    border-bottom-width: 10px;
+    border-bottom-color: rgba(0, 0, 0, 0.3);
+    background: rgba(0, 0, 0, 0.4);
+
+}
+body{
+    animation: fadeins 4s;
+    background: black;
+    .line{
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    background: rgba(0, 0, 0, 0.3);
+    float: left;
+
+    height: 20px;
+    z-index: 3;
+    border-style: solid;
+        width: 700px;
+    margin-left: -350px;
+
+    transition: width 1s,margin-left 1s;
+    border-color: rgba(135, 235, 235, 0.66);
+    box-shadow: inset -1px 1px 4px 2px rgba(255, 255, 255, 0.5), inset 1px -1px 4px 2px rgba(221, 221, 221, 0.5);
+    -webkit-animation: bs linear 1s 1s infinite, bs2-in 1s;
+    -moz-animation: bs linear 1s 1s infinite, bs2-in 1s;
+    animation: bs linear 1s 1s infinite, bs2-in 1s,fadein ease-in-out 1s 1s;
+
+}
+    #button{
     content: '';
     width: 300px;
     height: 120px;
@@ -98,18 +138,75 @@
     border-bottom-color: rgba(255, 255, 255, 0.4);
     -webkit-animation: bs linear 2s 0.5s infinite;
     -moz-animation: bs linear 2s 0.5s infinite;
-    animation: bs linear 2s 0.5s infinite;
+    animation: fadein2 1s 1s none,bs linear 2s 0.5s infinite;
 }
-#button:hover{
+}
+@keyframes fadein {
+    0% {
+        width: 0px;
+        margin-left: 0px;
+    }
+    80% {
+        width: 750px;
+        margin-left: -375px;
+    }
+    100% {
+        width: 700px;
+        margin-left: -350px;
+    }
+}
+@keyframes fadein2 {
+    0% {
+        width: 0px;
+        margin-top:60px;
+        margin-left: 0px;
+        height: 20px;
+        font-size: 0;
+    }
+    80% {
+        width: 320px;
+        margin-left: -160px;
+        height: 130px;
+        margin-top:-5px;
+        font-size: xxx-large;
+    }
+    100% {
+        width: 300px;
+        margin-left: -150px;
+        height: 120px;
+        margin-top:0px;
+        font-size: xxx-large;
+    }
+}
+
+@keyframes fadeins {
+    0% {
+        opacity:0;
+    }
+    10% {
+        opacity:0;
+    }
+
+    100% {
+        opacity:1;
+    }
+}
+@keyframes fadein3 {
+    0% {
+        font-size: 0;
+        margin-left: 0px;
+        margin-top:50px;
+        background: rgba(0, 0, 0, 0);
+    }
 
 
-    transition: border-bottom-width 0.2s 0.2s linear,border-bottom-color 0.1s 0.1s linear,background 0.2s 0.2s linear;
 
-    border-bottom-style: solid;
-    border-bottom-width: 10px;
-    border-bottom-color: rgba(0, 0, 0, 0.3);
-    background: rgba(0, 0, 0, 0.4);
-
+    100% {
+        font-size: 100px;
+        margin-left: -100px;
+        margin-top:0px;
+        background: rgba(0, 0, 0, 0.2);
+    }
 }
 #button:active{
     transition: border-bottom-width 0.2s 0s linear,border-bottom-color 0.1s 0s linear,background 0.2s 0s linear;
@@ -121,22 +218,10 @@
     background: rgba(0, 0, 0, 0.2);
 
 }
-.line{
-    position: absolute;
-    top: 25%;
-    left: 50%;
-    background: rgba(0, 0, 0, 0.3);
-    float: left;
-    margin-left: -350px;
-    width: 700px;
-    height: 20px;
-    z-index: 3;
-    border-style: solid;
-    border-color: rgba(135, 235, 235, 0.66);
-    box-shadow: inset -1px 1px 4px 2px rgba(255, 255, 255, 0.5), inset 1px -1px 4px 2px rgba(221, 221, 221, 0.5);
-    -webkit-animation: bs linear 1s 1s infinite, bs2-in 1s;
-    -moz-animation: bs linear 1s 1s infinite, bs2-in 1s;
-    animation: bs linear 1s 1s infinite, bs2-in 1s;
+
+.line:before{
+    margin-left: 0px;
+    width: 0px;
 
 }
 #c {
