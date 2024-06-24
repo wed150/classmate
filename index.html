@@ -14,7 +14,7 @@
 <div class="bg">
     <p class="font" >欢迎</p>
     <div class="line"></div>
-    <button id="button">开始</button>
+    <button id="button" type="button" value="button" onclick="f()">开始</button>
               <div id='c'>
   <div class='s'></div>
   <div class='s'></div>
@@ -33,7 +33,18 @@
 
 
 </div></div>
+<script type="text/javascript">
+    function f() {
 
+		document.querySelector("#button").onclick = function() {
+			setTimeout(()=>{
+				window.location.href="./main.html"
+            },30)
+
+        window.location.href="./main.html"}
+    }
+
+</script>
 
 
 
