@@ -28,11 +28,11 @@
                 background-size: cover;
                 background-repeat: no-repeat;
 
-                z-index: 2;
+                z-index: 1;
             }
             .bgs{
                 opacity: 0;
-                transition: opacity 1s 99999999999999999999999999999999999999999999999999999999999999999s linear;
+                transition: opacity 1s 0.2s linear;
                 content: '';
                 display: block;
                 position: absolute;
@@ -44,14 +44,15 @@
                 background-position: center;
                 background-size: cover;
                 background-repeat: no-repeat;
-                filter: blur(1px);
-                z-index: 1;
+                filter: blur(2px);
+                z-index: 2;
 
 
             }
+
             .bg:hover .bgs{
                 opacity: 1;
-                transition: opacity 1s 2s linear;
+                transition: opacity 1s 0.2s linear ;
                 content: '';
                 display: block;
                 position: absolute;
@@ -63,9 +64,10 @@
                 background-position: center;
                 background-size: cover;
                 background-repeat: no-repeat;
-                filter: blur(1px);
-                z-index: 1;
+                filter: blur(2px);
+                z-index: 2;
             }
+
             .font{
 
 
@@ -75,10 +77,10 @@
                 text-align: center;
 
                 position: relative;
-                font-size: xxx-large;
+                font-size: 100px;
 
 
-                font-weight: bolder;
+                font-weight: bold;
                 color: white;
                 z-index: 10;
             }
@@ -118,14 +120,18 @@
 <body>
 
 <div class="bg">
-<div class="bgs"></div>
-
-
-</div>
-
-<p class="font" >
+    <p class="font" >
     欢迎
 </p>
-<button class="button">开始</button>
+    <button class="button">开始</button>
+    <div class="bgs">
+
+
+
+</div></div>
+
+
+
+
 </body>
 </html>
