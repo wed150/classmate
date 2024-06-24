@@ -44,6 +44,8 @@
     top: 0;
     left: 0;
     width: 100%;
+    margin-top:0px;
+    
     height: 100%;
     background-image: url("images/bg.jpg");
     background-position: center;
@@ -80,7 +82,7 @@
     top: 60%;
     left: 50%;
     transition: border-bottom-width 0.2s 0.2s linear,border-bottom-color 0.1s 0.1s linear,background 0.2s 0.2s linear;
-
+    margin-top:0px;
     border-bottom-style: solid;
     border-bottom-width: 0px;
     border-left-style: none;
@@ -106,7 +108,7 @@
     -webkit-animation: bs2 linear 1s 1s infinite, bs2-in 1s;
     -moz-animation: bs2 linear 1s 1s infinite, bs2-in 1s;
     animation: bs2 linear 1s 1s infinite, bs2-in 1s;
-
+    margin-top:0px;
     transition: border-bottom-width 0.2s 0.2s linear,border-bottom-color 0.1s 0.1s linear,background 0.2s 0.2s linear,animation 0.2s 0.2s linear;
 
     border-bottom-style: solid;
@@ -123,6 +125,7 @@ body{
 
 }
     .line{
+        margin-top:0px;
     position: absolute;
     top: 240px;
     left: 50%;
@@ -220,7 +223,7 @@ body{
 }
 #button:active{
     transition: border-bottom-width 0.1s 0s linear,border-bottom-color 0.1s 0s linear,background 0.1s 0s linear;
-
+    margin-top:0px;
 
     border-bottom-style: solid;
     border-bottom-width: 20px;
@@ -240,7 +243,7 @@ body{
     top: 30%;
     left: 50%;
     margin-left: -325px;
-
+    margin-top:0px;
     
   }
   
