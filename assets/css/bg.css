@@ -1,0 +1,372 @@
+.bg {
+
+
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("images/bg.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    z-index: 1;
+}
+.bgs{
+    opacity: 0;
+    transition: opacity 1s 0.2s linear;
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("images/bg.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: blur(2px);
+    z-index: 2;
+
+
+}
+
+.bg:hover .bgs{
+    opacity: 1;
+    transition: opacity 1s 0.2s linear ;
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("images/bg.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: blur(2px);
+    z-index: 2;
+}
+
+.font{
+
+
+
+
+
+    text-align: center;
+
+    position: relative;
+    font-size: 100px;
+
+
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.95);
+    z-index: 10;
+}
+.button{
+    content: '';
+    width: 300px;
+    height: 120px;
+    display: block;
+    top: 60%;
+    left: 50%;
+    margin-left: -150px;
+    position: absolute;
+    text-align:center;
+    font-size: xxx-large;
+    font-weight: bolder;
+    z-index: 11;
+    border-radius: 60px;
+    color: white;
+    box-shadow: inset -1px 1px 4px 2px rgba(255, 255, 255, 0.5), inset 1px -1px 4px 2px rgba(221, 221, 221, 0.5);
+    background: rgba(0, 0, 0, 0.3);
+    border-color: rgba(255, 255, 255, 0.5);
+    -webkit-animation: bs linear 2s 0.5s infinite;
+    -moz-animation: bs linear 2s 0.5s infinite;
+    animation: bs linear 2s 0.5s infinite;
+}
+#c {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    margin-left: -355px;
+    
+  }
+  
+  .s {
+    position: relative;
+
+    background: rgba(0, 0, 0, 0.3);
+    float: left;
+    margin-left: 20px;
+    box-shadow: inset -1px 1px 4px 2px rgba(255, 255, 255, 0.5), inset 1px -1px 4px 2px rgba(221, 221, 221, 0.5);
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    transition: all 1s;
+    z-index: 3;
+  }
+  .s:nth-child(n):hover {
+    -webkit-animation: bs2 linear 1s 1s infinite, bs2-in 1s;
+    -moz-animation: bs2 linear 1s 1s infinite, bs2-in 1s;
+    animation: bs2 linear 1s 1s infinite, bs2-in 1s;
+    z-index: 3;
+  }
+  
+  .s:nth-child(1) {
+    width: 20px;
+    height: 20px;
+
+    -webkit-animation: bs linear 2s 0.5s infinite;
+    -moz-animation: bs linear 2s 0.5s infinite;
+    animation: bs linear 2s 0.5s infinite;
+    z-index: 3;
+  }
+  
+  .s:nth-child(2) {
+    width: 30px;
+    height: 30px;
+
+    -webkit-animation: bs linear 2s 0.7s infinite;
+    -moz-animation: bs linear 2s 0.7s infinite;
+    animation: bs linear 2s 0.7s infinite;
+    z-index: 3;
+  }
+  
+  .s:nth-child(3) {
+    width: 40px;
+    height: 40px;
+
+    -webkit-animation: bs linear 2s 0.9s infinite;
+    -moz-animation: bs linear 2s 0.9s infinite;
+    animation: bs linear 2s 0.9s infinite;
+
+    z-index: 3;
+  }
+  
+  .s:nth-child(4) {
+    width: 50px;
+    height: 50px;
+
+    -webkit-animation: bs linear 2s 1.1s infinite;
+    -moz-animation: bs linear 2s 1.1s infinite;
+    animation: bs linear 2s 1.1s infinite;
+    z-index: 3;
+  }
+  
+  .s:nth-child(5) {
+    width: 60px;
+    height: 60px;
+
+    -webkit-animation: bs linear 2s 1.3s infinite;
+    -moz-animation: bs linear 2s 1.3s infinite;
+    animation: bs linear 2s 1.3s infinite;
+    z-index: 3;
+  }
+  
+  .s:nth-child(6) {
+    width: 70px;
+    height: 70px;
+
+    -webkit-animation: bs linear 2s 1.5s infinite;
+    -moz-animation: bs linear 2s 1.5s infinite;
+    animation: bs linear 2s 1.5s infinite;
+    z-index: 3;
+  }
+  
+  .s:nth-child(7) {
+    width: 60px;
+    height: 60px;
+
+    -webkit-animation: bs linear 2s 1.7s infinite;
+    -moz-animation: bs linear 2s 1.7s infinite;
+    animation: bs linear 2s 1.7s infinite;
+    z-index: 3;
+  }
+  
+  .s:nth-child(8) {
+    width: 50px;
+    height: 50px;
+
+    -webkit-animation: bs linear 2s 1.9s infinite;
+    -moz-animation: bs linear 2s 1.9s infinite;
+    animation: bs linear 2s 1.9s infinite;
+    z-index: 3;
+  }
+  
+  .s:nth-child(9) {
+    width: 40px;
+    height: 40px;
+
+    -webkit-animation: bs linear 2s 2.1s infinite;
+    -moz-animation: bs linear 2s 2.1s infinite;
+    animation: bs linear 2s 2.1s infinite;
+    z-index: 3;
+  }
+  
+  .s:nth-child(10) {
+    width: 30px;
+    height: 30px;
+
+    -webkit-animation: bs linear 2s 2.3s infinite;
+    -moz-animation: bs linear 2s 2.3s infinite;
+    animation: bs linear 2s 2.3s infinite;
+    z-index: 3;
+  }
+  
+  .s:nth-child(11) {
+    width: 20px;
+    height: 20px;
+
+    -webkit-animation: bs linear 2s 2.5s infinite;
+    -moz-animation: bs linear 2s 2.5s infinite;
+    animation: bs linear 2s 2.5s infinite;
+    z-index: 3;
+  }
+  
+  @-webkit-keyframes bs {
+    0% {
+      box-shadow: inset -1px 1px 3px 2px rgba(255, 255, 255, 0.5), inset 1px -1px 3px 2px rgba(221, 221, 221, 0.5), 0 0 0px 0 #b2ff1a;
+    }
+  
+    50% {
+      box-shadow: inset -1px 1px 3px 2px rgba(255, 255, 255, 0.5), inset 1px -1px 3px 2px rgba(221, 221, 221, 0.5), 0 0 20px 0 #1affff;
+    }
+  
+    100% {
+      box-shadow: inset -1px 1px 3px 2px rgba(255, 255, 255, 0.5), inset 1px -1px 3px 2px rgba(221, 221, 221, 0.5), 0 0 0px 0 #b2ff1a;
+    }
+  }
+  @-moz-keyframes bs {
+    0% {
+      box-shadow: inset -1px 1px 3px 2px rgba(255, 255, 255, 0.5), inset 1px -1px 3px 2px rgba(221, 221, 221, 0.5), 0 0 0px 0 #b2ff1a;
+    }
+  
+    50% {
+      box-shadow: inset -1px 1px 3px 2px rgba(255, 255, 255, 0.5), inset 1px -1px 3px 2px rgba(221, 221, 221, 0.5), 0 0 20px 0 #1affff;
+    }
+  
+    100% {
+      box-shadow: inset -1px 1px 3px 2px rgba(255, 255, 255, 0.5), inset 1px -1px 3px 2px rgba(221, 221, 221, 0.5), 0 0 0px 0 #b2ff1a;
+    }
+  }
+  @-o-keyframes bs {
+    0% {
+      box-shadow: inset -1px 1px 3px 2px rgba(255, 255, 255, 0.5), inset 1px -1px 3px 2px rgba(221, 221, 221, 0.5), 0 0 0px 0 #b2ff1a;
+    }
+  
+    50% {
+      box-shadow: inset -1px 1px 3px 2px rgba(255, 255, 255, 0.5), inset 1px -1px 3px 2px rgba(221, 221, 221, 0.5), 0 0 20px 0 #1affff;
+    }
+  
+    100% {
+      box-shadow: inset -1px 1px 3px 2px rgba(255, 255, 255, 0.5), inset 1px -1px 3px 2px rgba(221, 221, 221, 0.5), 0 0 0px 0 #b2ff1a;
+    }
+  }
+  @keyframes bs {
+    0% {
+      box-shadow: inset -1px 1px 3px 2px rgba(255, 255, 255, 0.5), inset 1px -1px 3px 2px rgba(221, 221, 221, 0.5), 0 0 0px 0 #b2ff1a;
+    }
+  
+    50% {
+      box-shadow: inset -1px 1px 3px 2px rgba(255, 255, 255, 0.5), inset 1px -1px 3px 2px rgba(221, 221, 221, 0.5), 0 0 20px 0 #1affff;
+    }
+  
+    100% {
+      box-shadow: inset -1px 1px 3px 2px rgba(255, 255, 255, 0.5), inset 1px -1px 3px 2px rgba(221, 221, 221, 0.5), 0 0 0px 0 #b2ff1a;
+    }
+  }
+  @-webkit-keyframes bs2-in {
+    0% {
+      box-shadow: inset -1px 1px 3px 2px rgba(255, 255, 255, 0.5), inset 1px -1px 3px 2px rgba(221, 221, 221, 0.5), 0 0 10px 0 #bbff33;
+    }
+  
+    100% {
+      box-shadow: inset -1px 1px 5px 2px rgba(255, 255, 255, 0.5), inset 1px -1px 5px 2px rgba(221, 221, 221, 0.5), 0 0 0px 0 #ff3333;
+    }
+  }
+  @-moz-keyframes bs2-in {
+    0% {
+      box-shadow: inset -1px 1px 3px 2px rgba(255, 255, 255, 0.5), inset 1px -1px 3px 2px rgba(221, 221, 221, 0.5), 0 0 10px 0 #bbff33;
+    }
+  
+    100% {
+      box-shadow: inset -1px 1px 5px 2px rgba(255, 255, 255, 0.5), inset 1px -1px 5px 2px rgba(221, 221, 221, 0.5), 0 0 0px 0 #ff3333;
+    }
+  }
+  @-o-keyframes bs2-in {
+    0% {
+      box-shadow: inset -1px 1px 3px 2px rgba(255, 255, 255, 0.5), inset 1px -1px 3px 2px rgba(221, 221, 221, 0.5), 0 0 10px 0 #bbff33;
+    }
+  
+    100% {
+      box-shadow: inset -1px 1px 5px 2px rgba(255, 255, 255, 0.5), inset 1px -1px 5px 2px rgba(221, 221, 221, 0.5), 0 0 0px 0 #ff3333;
+    }
+  }
+  @keyframes bs2-in {
+    0% {
+      box-shadow: inset -1px 1px 3px 2px rgba(255, 255, 255, 0.5), inset 1px -1px 3px 2px rgba(221, 221, 221, 0.5), 0 0 10px 0 #bbff33;
+    }
+  
+    100% {
+      box-shadow: inset -1px 1px 5px 2px rgba(255, 255, 255, 0.5), inset 1px -1px 5px 2px rgba(221, 221, 221, 0.5), 0 0 0px 0 #ff3333;
+    }
+  }
+  @-webkit-keyframes bs2 {
+    0% {
+      box-shadow: inset -1px 1px 5px 2px rgba(255, 255, 255, 0.5), inset 1px -1px 5px 2px rgba(221, 221, 221, 0.5), 0 0 0px 0 #ff3333;
+    }
+  
+    50% {
+      box-shadow: inset -1px 1px 5px 2px rgba(255, 255, 255, 0.5), inset 1px -1px 5px 2px rgba(221, 221, 221, 0.5), 0 0 10px 0 #ffbb33;
+    }
+  
+    100% {
+      box-shadow: inset -1px 1px 5px 2px rgba(255, 255, 255, 0.5), inset 1px -1px 5px 2px rgba(221, 221, 221, 0.5), 0 0 0px 0 #ff3333;
+    }
+  }
+  @-moz-keyframes bs2 {
+    0% {
+      box-shadow: inset -1px 1px 5px 2px rgba(255, 255, 255, 0.5), inset 1px -1px 5px 2px rgba(221, 221, 221, 0.5), 0 0 0px 0 #ff3333;
+    }
+  
+    50% {
+      box-shadow: inset -1px 1px 5px 2px rgba(255, 255, 255, 0.5), inset 1px -1px 5px 2px rgba(221, 221, 221, 0.5), 0 0 10px 0 #ffbb33;
+    }
+  
+    100% {
+      box-shadow: inset -1px 1px 5px 2px rgba(255, 255, 255, 0.5), inset 1px -1px 5px 2px rgba(221, 221, 221, 0.5), 0 0 0px 0 #ff3333;
+    }
+  }
+  @-o-keyframes bs2 {
+    0% {
+      box-shadow: inset -1px 1px 5px 2px rgba(255, 255, 255, 0.5), inset 1px -1px 5px 2px rgba(221, 221, 221, 0.5), 0 0 0px 0 #ff3333;
+    }
+  
+    50% {
+      box-shadow: inset -1px 1px 5px 2px rgba(255, 255, 255, 0.5), inset 1px -1px 5px 2px rgba(221, 221, 221, 0.5), 0 0 10px 0 #ffbb33;
+    }
+  
+    100% {
+      box-shadow: inset -1px 1px 5px 2px rgba(255, 255, 255, 0.5), inset 1px -1px 5px 2px rgba(221, 221, 221, 0.5), 0 0 0px 0 #ff3333;
+    }
+  }
+  @keyframes bs2 {
+    0% {
+      box-shadow: inset -1px 1px 5px 2px rgba(255, 255, 255, 0.5), inset 1px -1px 5px 2px rgba(221, 221, 221, 0.5), 0 0 0px 0 #ff3333;
+    }
+  
+    50% {
+      box-shadow: inset -1px 1px 5px 2px rgba(255, 255, 255, 0.5), inset 1px -1px 5px 2px rgba(221, 221, 221, 0.5), 0 0 10px 0 #ffbb33;
+    }
+  
+    100% {
+      box-shadow: inset -1px 1px 5px 2px rgba(255, 255, 255, 0.5), inset 1px -1px 5px 2px rgba(221, 221, 221, 0.5), 0 0 0px 0 #ff3333;
+    }
+  }
+  
